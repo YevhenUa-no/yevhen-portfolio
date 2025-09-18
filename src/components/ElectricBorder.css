@@ -1,0 +1,71 @@
+.electric-border {
+  --eb-border-width: 2px;
+  --eb-color: #5227FF;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  border: var(--eb-border-width) solid transparent;
+}
+
+.eb-svg {
+  position: absolute;
+  inset: -100px;
+  width: calc(100% + 200px);
+  height: calc(100% + 200px);
+  z-index: -10;
+  pointer-events: none;
+  overflow: visible;
+  filter: url(#turbulent-displace);
+}
+
+.eb-layers {
+  position: absolute;
+  inset: calc(var(--eb-border-width) * -1);
+  border-radius: inherit;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.electric-border:hover .eb-layers {
+  opacity: 1;
+}
+
+.eb-stroke {
+  position: absolute;
+  inset: 0;
+  border: var(--eb-border-width) solid var(--eb-color);
+  border-radius: inherit;
+  filter: url(#turbulent-displace);
+}
+
+.eb-content {
+  position: relative;
+}
+
+.eb-glow-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--eb-color);
+  border-radius: inherit;
+  z-index: -1;
+  filter: blur(20px);
+  opacity: 0.7;
+}
+
+.eb-glow-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--eb-color);
+  border-radius: inherit;
+  z-index: -1;
+  filter: blur(40px);
+  opacity: 0.3;
+}
+
