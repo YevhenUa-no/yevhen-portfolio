@@ -2,7 +2,7 @@
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from './HomePage';
-import SnakeGame from './SnakeGame';
+import SnakeGame from './pages/SnakeGame';
 import './App.css';
 
 function App() {
