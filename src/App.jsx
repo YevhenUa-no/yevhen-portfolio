@@ -1,13 +1,6 @@
 // src/App.jsx
-<<<<<<< HEAD
-
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import HomePage from './HomePage';
-import SnakeGame from './pages/SnakeGame';
-=======
 import MatrixCanvas from './components/MatrixCanvas';
 import ProjectCard from './components/ProjectCard';
->>>>>>> parent of 25e7c12 (code update)
 import './App.css';
 
 function App() {

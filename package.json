@@ -12,16 +12,10 @@
     "predeploy": "npm run build", 
     "deploy": "gh-pages -d dist"
   },
-  "dependencies": {
+"dependencies": {
     "react": "^18.2.0",
-<<<<<<< HEAD
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^7.9.1",
-    "tone": "^15.1.22"
-=======
-    "react-dom": "^18.2.0"
->>>>>>> parent of 25e7c12 (code update)
-  },
+    "react-router-dom": "^6.9.0"
+},
   "devDependencies": {
     "@types/react": "^18.2.56",
     "@types/react-dom": "^18.2.19",
