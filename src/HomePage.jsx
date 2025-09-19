@@ -8,7 +8,7 @@ function HomePage() {
     {
       title: 'Classic Snake Game',
       description: 'A retro-style game built entirely with HTML5 and JavaScript. It showcases fundamental game development logic, including canvas rendering and user input handling.',
-      link: '/snake-game',
+      link: './pages/SnakeGame',
       svg: (
         <svg className="svg-animation" viewBox="0 0 100 100">
           <path d="M10 50 Q30 20, 50 50 T90 50" fill="none" stroke="#10b981" strokeWidth="5" className="snake-path" />
