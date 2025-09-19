@@ -206,4 +206,5 @@ function SnakeGame() {
 
         const mainSynth = new Tone.Synth({
             oscillator: { type: "square8", modulationFrequency: 0.5 },
-            envelope:
+            envelope: { attack: 0.02, decay: 0.1, sustain: 0.3, release: 0.8 }
+        }).chain(new Tone.Filter(800, "lowpass"), new Tone.Volume(-10), Tone.Destination);
